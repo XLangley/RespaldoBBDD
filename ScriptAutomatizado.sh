@@ -23,3 +23,5 @@ git commit -m "Respaldo ${new_backup_number}"
 
 git push origin main
 
+#Integrantes:| Alfredo Galdames | Fernando Muñoz | Jean Venegas |
+

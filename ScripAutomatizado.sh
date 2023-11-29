@@ -13,7 +13,7 @@ last_backup_number=$(echo "$last_commit_message" | grep -oP '\bRespaldo \K\d+' |
 new_backup_number=$((last_backup_number + 1))
 
 # Respaldar la base de datos MySQL
-mysqldump Evaluacion4 > /home/seguridad/RespaldoBBDD/Respaldo${new_backup_number}.sql
+mysqldump -u seguridad -p seguridad --databases Evaluacion4 > /home/seguridad/RespaldoBBDD/Respaldo${new_backup_number}.sql
 
 # Agregar los cambios al repositorio Git
 git add .
